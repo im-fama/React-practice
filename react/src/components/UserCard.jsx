@@ -1,3 +1,4 @@
+import '../css/UserCard.css';
 
 function UserCard({ name, role, isOnline }) {
   return (
