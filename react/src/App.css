@@ -1,0 +1,17 @@
+.nav-bar {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+}
+
+.nav-bar Link {
+	color: #0b66ff;
+	text-decoration: none;
+	padding: 0.35rem 0.6rem;
+	border-radius: 4px;
+}
+
+.nav-bar Link:hover {
+	background: rgba(11,102,255,0.08);
+}

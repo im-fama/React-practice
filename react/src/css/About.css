@@ -1,0 +1,19 @@
+/* Basic About page styles */
+.about-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(12, 22, 37, 0.06);
+}
+
+.about-container h1 {
+  color: #0b2350;
+  margin-bottom: 0.5rem;
+}
+
+.about-container p {
+  color: #394b63;
+  line-height: 1.7;
+}

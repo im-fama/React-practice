@@ -1,0 +1,42 @@
+/* Basic Contact page styles */
+.contact-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 1.75rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(12, 22, 37, 0.06);
+}
+
+.contact-container h1 {
+  color: #0b2350;
+  margin-bottom: 0.5rem;
+}
+
+.contact-container form {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.contact-container label {
+  font-weight: 600;
+  color: #243447;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 0.5rem;
+  border: 1px solid #d6dce6;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.contact-container button[type="submit"] {
+  background: #0b66ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+}

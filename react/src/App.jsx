@@ -4,7 +4,12 @@ import Button from './components/Button';
 import FavoriteColor from './components/FavoriteColor';
 import Counter from './components/Counter';
 import Controls from './components/Controls';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import './App.css';
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
   
 const btnProps = { label: 'Submit', variant: 'primary' };
 
@@ -16,6 +21,20 @@ function App() {
   };
 
   return (
+    <BrowserRouter>
+      <nav className="nav-bar">
+        <Link to="/">Home</Link> |{" "}
+        <Link to="/about">About</Link> |{" "}
+        <Link to="/contact">Contact</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  
     /*
     <div>
       <UserCard
@@ -27,8 +46,6 @@ function App() {
       <Button {...btnProps} onClick={handleSubmit} />
       <FavoriteColor />
     </div>
-    */
-
     <div style={{ textAlign: "center" }}>
       <h1>Counter App</h1>
 
@@ -36,7 +53,10 @@ function App() {
       <Controls setCount={setCount} count={count} />
 
     </div>
+    */
+
   );
 }
 
 export default App;
+
