@@ -1,16 +1,17 @@
 /* Basic Contact page styles */
 .contact-container {
-  max-width: 700px;
+  max-width: min(46rem, 90%);
   margin: 3rem auto;
   padding: 1.75rem;
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(12, 22, 37, 0.06);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.6rem 1.8rem rgba(12, 22, 37, 0.06);
 }
 
 .contact-container h1 {
   color: #0b2350;
   margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 2.6vw, 2.4rem);
 }
 
 .contact-container form {
@@ -22,21 +23,77 @@
 .contact-container label {
   font-weight: 600;
   color: #243447;
+  font-size: 0.95rem;
 }
 
 .contact-container input,
 .contact-container textarea {
-  padding: 0.5rem;
-  border: 1px solid #d6dce6;
-  border-radius: 6px;
+  padding: 0.75rem;
+  border: 0.1rem solid #d6dce6;
+  border-radius: 0.6rem;
   font-family: inherit;
+  font-size: 1rem;
 }
 
 .contact-container button[type="submit"] {
   background: #0b66ff;
   color: #fff;
   border: none;
-  padding: 0.6rem 0.9rem;
-  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  border-radius: 0.6rem;
   cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-container button[type="submit"]:hover {
+  background: #0a4db8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 1.5rem auto;
+    padding: 1.25rem;
+  }
+
+  .contact-container h1 {
+    font-size: clamp(1.75rem, 4.5vw, 2.1rem);
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    padding: 0.65rem;
+    font-size: 1rem;
+  }
+
+  .contact-container button[type="submit"] {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .contact-container h1 {
+    font-size: clamp(1.5rem, 5vw, 1.85rem);
+  }
+
+  .contact-container form {
+    gap: 0.6rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-container button[type="submit"] {
+    width: 100%;
+    padding: 0.7rem;
+  }
 }

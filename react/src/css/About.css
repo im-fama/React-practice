@@ -1,19 +1,47 @@
 /* Basic About page styles */
 .about-container {
-  max-width: 900px;
+  max-width: min(56rem, 90%);
   margin: 3rem auto;
   padding: 2rem;
   background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(12, 22, 37, 0.06);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.6rem 1.8rem rgba(12, 22, 37, 0.06);
 }
 
 .about-container h1 {
   color: #0b2350;
   margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 2.4vw, 2.6rem);
 }
 
 .about-container p {
   color: #394b63;
   line-height: 1.7;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+  }
+
+  .about-container h1 {
+    font-size: clamp(1.75rem, 4.5vw, 2.2rem);
+  }
+
+  .about-container p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .about-container h1 {
+    font-size: clamp(1.5rem, 5vw, 1.9rem);
+  }
 }

@@ -1,27 +1,45 @@
-body {
-	margin: 0;
-	font-family: Inter, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-}
-
 .home-container {
-	max-width: 900px;
+	max-width: min(56rem, 90%);
 	margin: 3rem auto;
 	padding: 2rem;
 	background: #8692b1;
-	border-radius: 8px;
-	box-shadow: 0 6px 18px rgba(12, 22, 37, 0.08);
+	border-radius: 0.8rem;
+	box-shadow: 0 0.6rem 1.8rem rgba(12, 22, 37, 0.08);
 	text-align: center;
 }
 
 .home-container h1 {
 	margin: 0 0 1rem 0;
-	font-size: 2rem;
+	font-size: clamp(2rem, 2.5vw, 2.8rem);
 	color: #061b41;
 }
 
 .home-container p {
 	color: #0f1d41;
 	line-height: 1.6;
+	font-size: 1rem;
 }
 
+/* Mobile Responsive */
+@media (max-width: 768px) {
+	.home-container {
+		margin: 1.5rem auto;
+		padding: 1.5rem;
+	}
+
+	.home-container h1 {
+		font-size: clamp(1.75rem, 4.5vw, 2.4rem);
+	}
+}
+
+@media (max-width: 480px) {
+	.home-container {
+		margin: 1rem auto;
+		padding: 1rem;
+	}
+
+	.home-container h1 {
+		font-size: clamp(1.5rem, 5vw, 2rem);
+	}
+}
 

@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import './App.css';
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
   
 const btnProps = { label: 'Submit', variant: 'primary' };
 
