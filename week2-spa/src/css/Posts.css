@@ -1,0 +1,92 @@
+.posts-container {
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.posts-container h1 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.posts-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.posts-container li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.posts-container li:last-child {
+    border-bottom: none;
+}
+
+.posts-container a {
+    color: #0b66ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.posts-container a:hover {
+    color: #0052cc;
+    text-decoration: underline;
+    padding-left: 0.5rem;
+}
+
+.loading, .error {
+    padding: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.error {
+    color: #d32f2f;
+}
+
+.loading {
+    color: #666;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .posts-container {
+        padding: 1.5rem;
+    }
+
+    .posts-container h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .posts-container li {
+        padding: 1rem 0;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    .posts-container {
+        padding: 2rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 479px) {
+    .posts-container {
+        padding: 0.75rem;
+    }
+
+    .posts-container h1 {
+        font-size: 1.35rem;
+    }
+
+    .posts-container li {
+        padding: 0.5rem 0;
+    }
+}

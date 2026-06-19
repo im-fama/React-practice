@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getPost } from '../api/Posts';
+import '../css/PostDetail.css';
 
 function PostDetail() {
   const { id } = useParams();
@@ -20,11 +21,11 @@ function PostDetail() {
     return () => { cancelled = true; };
   }, [id]);  // re-fetch whenever the URL id changes
 
-  if (loading) return <p style={{padding:'24px'}}>Loading…</p>;
-  if (error)   return <p style={{padding:'24px'}}>Error: {error}</p>;
+  if (loading) return <p className="loading">Loading…</p>;
+  if (error)   return <p className="error">Error: {error}</p>;
 
   return (
-    <div style={{ padding: '24px' }}>
+    <div className="post-detail-container">
       <Link to="/posts">← Back to posts</Link>
       <h1>{post.title}</h1>
       <p>{post.body}</p>

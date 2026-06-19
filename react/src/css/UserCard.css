@@ -1,7 +1,49 @@
 .user-card {
-    background-color: lightblue;
+    background-color: #ADD8E6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-h1{
-    color: rgb(0, 0, 0);
+.user-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.user-card h2 {
+    margin-top: 0;
+    color: #0f1d41;
+}
+
+.user-card p {
+    margin: 0.5rem 0 0 0;
+    color: #555;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.35rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .user-card {
+        padding: 2rem;
+        margin: 1.5rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 479px) {
+    .user-card {
+        margin: 0.75rem;
+        padding: 1rem;
+    }
 }

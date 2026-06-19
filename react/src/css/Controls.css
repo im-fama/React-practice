@@ -1,26 +1,76 @@
+.control-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+[id*="-btn"] {
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    min-height: 44px;
+    flex: 1;
+    min-width: 120px;
+}
+
+[id*="-btn"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[id*="-btn"]:active {
+    transform: translateY(0);
+}
+
 #increment-btn {
     background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
+}
+
+#increment-btn:hover {
+    background-color: #388E3C;
 }
 
 #decrement-btn {
     background-color: #f44336;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
+}
+
+#decrement-btn:hover {
+    background-color: #da190b;
 }
 
 #reset-btn {
     background-color: #ff9800;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #e68900;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .control-buttons {
+        gap: 1rem;
+    }
+
+    [id*="-btn"] {
+        flex: 0 1 auto;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 479px) {
+    .control-buttons {
+        gap: 0.35rem;
+    }
+
+    [id*="-btn"] {
+        flex: 1;
+        padding: 10px 16px;
+        font-size: 14px;
+    }
 }   

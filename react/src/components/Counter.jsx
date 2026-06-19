@@ -1,6 +1,7 @@
+import '../css/Counter.css';
 
 function Counter({ count }) {
-  return <h2>Count: {count}</h2>;
+  return <div className="counter"><h2>Count: {count}</h2></div>;
 }
 
 export default Counter;

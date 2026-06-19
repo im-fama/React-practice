@@ -1,12 +1,7 @@
-body {
-	margin: 0;
-	font-family: Inter, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-}
-
 .home-container {
 	max-width: 900px;
-	margin: 3rem auto;
-	padding: 2rem;
+	margin: 1.5rem auto;
+	padding: 1.5rem;
 	background: #8692b1;
 	border-radius: 8px;
 	box-shadow: 0 6px 18px rgba(12, 22, 37, 0.08);
@@ -15,13 +10,49 @@ body {
 
 .home-container h1 {
 	margin: 0 0 1rem 0;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	color: #061b41;
 }
 
 .home-container p {
 	color: #0f1d41;
 	line-height: 1.6;
+	margin: 0;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+	.home-container {
+		margin: 3rem auto;
+		padding: 2rem;
+	}
+
+	.home-container h1 {
+		font-size: 2rem;
+	}
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+	.home-container {
+		margin: 4rem auto;
+	}
+
+	.home-container h1 {
+		font-size: 2.5rem;
+	}
+}
+
+/* Small Mobile Styles */
+@media (max-width: 479px) {
+	.home-container {
+		margin: 1rem;
+		padding: 1rem;
+	}
+
+	.home-container h1 {
+		font-size: 1.5rem;
+	}
 }
 
 

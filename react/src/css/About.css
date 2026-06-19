@@ -1,8 +1,7 @@
-/* Basic About page styles */
 .about-container {
   max-width: 900px;
-  margin: 3rem auto;
-  padding: 2rem;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
   background: #ffffff;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(12, 22, 37, 0.06);
@@ -10,10 +9,48 @@
 
 .about-container h1 {
   color: #0b2350;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: 1.75rem;
 }
 
 .about-container p {
   color: #394b63;
   line-height: 1.7;
+  margin: 0;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .about-container {
+    margin: 3rem auto;
+    padding: 2rem;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .about-container {
+    margin: 4rem auto;
+  }
+
+  .about-container h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 479px) {
+  .about-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .about-container h1 {
+    font-size: 1.5rem;
+  }
 }

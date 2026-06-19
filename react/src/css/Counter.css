@@ -1,0 +1,37 @@
+.counter {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.counter h2 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .counter {
+        margin: 2rem 0;
+        padding: 2rem;
+    }
+
+    .counter h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 479px) {
+    .counter {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .counter h2 {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,57 @@
+.home-container {
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.home-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0f1d41;
+}
+
+.home-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .home-container {
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+
+    .home-container h1 {
+        font-size: 2rem;
+    }
+
+    .home-container p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    .home-container {
+        margin: 3rem auto;
+    }
+
+    .home-container h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 479px) {
+    .home-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .home-container h1 {
+        font-size: 1.35rem;
+    }
+}
